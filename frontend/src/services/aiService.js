@@ -47,7 +47,7 @@ When giving advice, be philosophical but practical.
 
   async sendMessage(messageText) {
     try {
-      const response = await fetch('http://localhost:5000/api/chat', {
+      const response = await fetch('http://personalassistant-1.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
