@@ -62,6 +62,7 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
+app.get("/", (req,res) => {res.json({ message: "Backend is live" }); })
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Backend Server running on port ${PORT}`);
