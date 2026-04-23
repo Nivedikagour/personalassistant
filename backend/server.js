@@ -63,7 +63,7 @@ app.post('/api/chat', async (req, res) => {
 });
 
 app.get("/", (req,res) => {res.json({ message: "Backend is live" }); })
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Backend Server running on port ${PORT}`);
   console.log(`Connected to Hugging Face Inference API`);
