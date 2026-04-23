@@ -47,7 +47,7 @@ When giving advice, be philosophical but practical.
 
   async sendMessage(messageText) {
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'http://personalassistant-1.onrender.com/api/chat';
+      const API_URL = import.meta.env.VITE_API_URL || 'http://personalassistant-1.onrender.com';
       const response = await fetch(`${API_URL}/api/chat`, {
         method: 'POST',
         headers: {
