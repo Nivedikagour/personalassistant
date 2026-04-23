@@ -1,5 +1,5 @@
 import { HfInference } from '@huggingface/inference';
-const hfToken = "your_token_here";
+const hfToken = process.env.HF_ACCESS_TOKEN;
 const hf = new HfInference(hfToken);
 
 async function test() {
